@@ -26,6 +26,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 # Bootloader
 TARGET_OTA_ASSERT_DEVICE := picassowifi,n2awifi
 
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.twrp
+
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_n2awifi_defconfig
 
