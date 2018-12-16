@@ -26,7 +26,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 # Bootloader
 TARGET_OTA_ASSERT_DEVICE := picassowifi,n2awifi
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.twrp
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/twrp.fstab
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_n2awifi_defconfig
@@ -54,3 +54,5 @@ BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 
 # Inherit from exynos5420-common
 include device/samsung/exynos5420-common/BoardConfigCommon.mk
+
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/twrp.fstab
